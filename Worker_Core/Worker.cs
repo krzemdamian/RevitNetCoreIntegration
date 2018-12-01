@@ -32,9 +32,9 @@ namespace Worker_Core
                 {
                     deserializedObject = Serializer.Deserialize<MyDataModel>(stream);
                 }
-                Console.Write("Object successfuly received.");
-                Console.Write(string.Format("Deserialized object's field value equals: {0}", deserializedObject.test));
-                Console.WriteLine(string.Format("Object is now incremented to {0}" +
+                Console.WriteLine("Object successfuly received.");
+                Console.WriteLine(string.Format("Deserialized object's field value equals: {0}", deserializedObject.test));
+                Console.WriteLine(string.Format("Object is now incremented to {0} " +
                     "and is sent back to server.",++deserializedObject.test));
                 using (MemoryStream stream = new MemoryStream())
                 {

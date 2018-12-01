@@ -8,7 +8,6 @@ namespace Worker_Core
         {
             Console.WriteLine("Worker starting");
             Worker worker = new Worker();
-            Console.WriteLine("Worker started");
             Console.ReadKey();
         }
     }

@@ -50,8 +50,8 @@ namespace App_Framework
             {
                 _testObject = Serializer.Deserialize<MyDataModel>(stream);
             }
-            Console.Write("Object successfuly received.");
-            Console.Write(string.Format("Deserialized object's field value equals: {0}", _testObject.test));
+            Console.WriteLine("Object successfuly received.");
+            Console.WriteLine(string.Format("Deserialized object's field value equals: {0}", _testObject.test));
             _waitHandle.Set();
         }
 

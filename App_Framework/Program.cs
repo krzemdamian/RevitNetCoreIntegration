@@ -12,7 +12,6 @@ namespace App_Framework
         {
             Console.WriteLine("Comunication server starting...");
             ComunicationServer cs = new ComunicationServer();
-            Console.WriteLine("Server started");
             Console.ReadKey();
         }
     }
