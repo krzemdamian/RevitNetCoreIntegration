@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Clifton.Core.Pipes\Clifton.Core.Pipes.csproj" />
+    <ProjectReference Include="..\ModelLibrary_Standard\ModelLibrary_Standard.csproj" />
+  </ItemGroup>
+
+</Project>
