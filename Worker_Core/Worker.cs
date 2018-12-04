@@ -16,6 +16,7 @@ namespace Worker_Core
         {
             Console.WriteLine("Press any key to connect to server pipe.");
             _clientPipe = new ClientPipe(".", "Test", p => p.StartByteReaderAsync());
+            Console.ReadKey();
             _clientPipe.Connect();
             Console.WriteLine("Pipe connected.");
             _clientPipe.DataReceived += (sender, args) => ReceiveObject(args);

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>exercise</Name>
+    <Assembly>exercise/App_Framework.dll</Assembly>
+    <AddInId>48E26BA2-D7DF-4B91-93D5-385EBB49020B</AddInId>
+    <FullClassName>App_Framework.ComunicationServer</FullClassName>
+    <VendorId>DK</VendorId>
+    <VendorDescription>Damian Krzemiński, krzemdamian@gmail.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
