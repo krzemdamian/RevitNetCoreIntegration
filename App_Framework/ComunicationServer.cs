@@ -1,4 +1,5 @@
-﻿using Clifton.Core.Pipes;
+﻿using Autodesk.Revit.UI;
+using Clifton.Core.Pipes;
 using ModelLibrary_Standard;
 using ProtoBuf;
 using System;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace App_Framework
 {
-    class ComunicationServer
+    class ComunicationServer : IExternalApplication
     {
         MyDataModel _testObject;
 
@@ -53,6 +54,17 @@ namespace App_Framework
             Console.WriteLine("Object successfuly received.");
             Console.WriteLine(string.Format("Deserialized object's field value equals: {0}", _testObject.test));
             _waitHandle.Set();
+        }
+
+        public Result OnStartup(UIControlledApplication application)
+        {
+
+            return Result.Succeeded;
+        }
+
+        public Result OnShutdown(UIControlledApplication application)
+        {
+            return Result.Succeeded;
         }
 
 
